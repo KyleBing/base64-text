@@ -1,0 +1,71 @@
+@import "variables";
+@import "reset";
+@import "utility";
+@import "gutter";
+
+body{
+  padding: 30px;
+  font-family: "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
+}
+.title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.content{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+section{
+  padding: 20px;
+  width: 40%;
+}
+.operations{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 20%;
+  .button:last-child{
+    margin-top: 20px;
+  }
+}
+
+.button{
+  background-color: $color-main;
+  color: white;
+  min-width: 100px;
+  text-align: center;
+  line-height: 1;
+  padding: 10px 15px;
+  @include border-radius(3px);
+  @extend .btn-like
+}
+
+textarea{
+  padding: 10px 15px;
+  overflow: hidden;
+  @include border-radius(5px);
+  -webkit-appearance: none;
+  white-space: pre-wrap;
+  border: 1px solid $color-border;
+  resize: none;
+  min-height: 250px;
+  width: 100%;
+  display: block;
+  &.big{
+    max-height: 200px;
+  }
+  &:focus{
+    border-color: $color-border-clearly;
+    @include box-shadow(inset 0 0 10px transparentize(black, 0.88));
+  }
+}
+
+
+
+
+@import "dark";
