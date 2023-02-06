@@ -449,6 +449,7 @@ body {
 }
 
 .title {
+  margin-bottom: 20px;
   text-align: center;
   font-weight: bold;
   font-size: 30px;
@@ -465,6 +466,7 @@ section {
 }
 
 .operations {
+  flex-shrink: 0;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -512,19 +514,37 @@ textarea:focus {
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.12);
 }
 
+@media (max-width: 512px) {
+  .title {
+    font-size: 20px;
+  }
+  body {
+    padding: 10px;
+  }
+  .content {
+    flex-flow: column nowrap;
+  }
+  section {
+    padding: 20px;
+    width: 100%;
+  }
+  textarea {
+    min-height: 100px;
+  }
+  .operations {
+    width: 100%;
+  }
+}
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #262626;
   }
-
   .container {
     background-color: #262626;
   }
-
   .rate {
     background-color: transparent !important;
   }
-
   .iphone .title-content {
     border-bottom-color: #4d4d4d;
   }
@@ -558,17 +578,14 @@ textarea:focus {
   .iphone .detail-item-content .tip .sup {
     background-color: #262626;
   }
-
   .gradient-blue {
     color: #d9d9d9 !important;
     background-image: linear-gradient(to bottom right, #073fd5, #05638e);
   }
-
   .gradient-purple {
     color: #d9d9d9 !important;
     background-image: linear-gradient(to bottom right, #7700a1, #bc0179);
   }
-
   rect {
     fill: transparent;
   }
@@ -587,11 +604,9 @@ textarea:focus {
   rect#iphone-line {
     fill: #FF9500;
   }
-
   text, tspan {
     fill: #bfbfbf;
   }
-
   .filter-list .iphone-tag-list .iphone-tag {
     border-color: #4d4d4d;
     color: #a6a6a6;
@@ -605,21 +620,17 @@ textarea:focus {
     width: 8px;
     height: 10px;
   }
-
   ::-webkit-scrollbar-track {
     border: none;
     background-color: rgba(0, 0, 0, 0);
   }
-
   ::-webkit-scrollbar-thumb {
     border-color: transparent;
     background-color: transparent;
   }
-
   :hover::-webkit-scrollbar-thumb {
     background-color: #474747;
   }
-
   .gradient {
     background-image: linear-gradient(to bottom right, #333333, #404040);
   }
@@ -628,7 +639,6 @@ textarea:focus {
   body {
     background-color: #262626 !important;
   }
-
   .iphone {
     overflow: hidden;
     -webkit-border-radius: 15px;
@@ -639,12 +649,10 @@ textarea:focus {
     padding: 0;
     border: 1px solid #4d4d4d !important;
   }
-
   .title-content {
     border-bottom: 1px solid #dddddd;
     background-color: #474747 !important;
   }
-
   .ref-content > * {
     border-bottom: 1px solid #4d4d4d !important;
   }

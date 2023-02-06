@@ -8,6 +8,7 @@ body{
   font-family: "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
 }
 .title{
+  margin-bottom: 20px;
   text-align: center;
   font-weight: bold;
   font-size: 30px;
@@ -23,6 +24,7 @@ section{
   width: 40%;
 }
 .operations{
+  flex-shrink: 0;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -65,7 +67,27 @@ textarea{
   }
 }
 
-
+@media (max-width: 512px) {
+  .title{
+    font-size: 20px;
+  }
+  body{
+    padding: 10px;
+  }
+  .content{
+    flex-flow: column nowrap;
+  }
+  section{
+    padding: 20px;
+    width: 100%;
+  }
+  textarea{
+    min-height: 100px;
+  }
+  .operations{
+    width: 100%;
+  }
+}
 
 
 @import "dark";
