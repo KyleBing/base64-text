@@ -492,7 +492,7 @@ section {
 
 textarea {
   padding: 10px 15px;
-  overflow: hidden;
+  overflow: auto;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;

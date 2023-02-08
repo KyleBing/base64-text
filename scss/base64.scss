@@ -49,7 +49,7 @@ section{
 
 textarea{
   padding: 10px 15px;
-  overflow: hidden;
+  overflow: auto;
   @include border-radius(5px);
   -webkit-appearance: none;
   white-space: pre-wrap;
