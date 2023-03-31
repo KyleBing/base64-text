@@ -456,13 +456,16 @@ body {
 }
 
 .content {
+  max-width: 1366px;
   display: flex;
   flex-flow: row nowrap;
+  margin: 0 auto;
 }
 
 section {
   padding: 20px;
-  width: 40%;
+  flex-grow: 1;
+  flex-shrink: 0;
 }
 
 .operations {
@@ -472,7 +475,7 @@ section {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  width: 20%;
+  width: 150px;
 }
 .operations .button:last-child {
   margin-top: 20px;
@@ -525,7 +528,7 @@ textarea:focus {
     flex-flow: column nowrap;
   }
   section {
-    padding: 20px;
+    padding: 10px;
     width: 100%;
   }
   textarea {
