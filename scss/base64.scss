@@ -53,7 +53,7 @@ section{
 textarea{
   padding: 10px 15px;
   overflow: auto;
-  @include border-radius(5px);
+  @include border-radius(10px);
   -webkit-appearance: none;
   white-space: pre-wrap;
   border: 1px solid $color-border;
