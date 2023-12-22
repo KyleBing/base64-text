@@ -477,8 +477,8 @@ section {
   padding: 20px;
   width: 150px;
 }
-.operations .button:last-child {
-  margin-top: 20px;
+.operations .button {
+  margin-bottom: 20px;
 }
 
 .button {
@@ -664,8 +664,6 @@ textarea:focus {
   .score-bar .score {
     color: #737373;
   }
-}
-@media (prefers-color-scheme: dark) {
   .sim-item .name {
     color: #a6a6a6;
   }

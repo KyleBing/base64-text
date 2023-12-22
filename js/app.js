@@ -28,8 +28,16 @@ let app = new Vue({
         stringToBase64(){
             this.base64Data = Base64.encode(this.stringData)
         },
+        stringToBase642(){
+            let onceData = Base64.encode(this.stringData)
+            this.base64Data = Base64.encode(onceData)
+        },
         base64ToString(){
             this.stringData = Base64.decode(this.base64Data)
+        },
+        base64ToString2(){
+            let onceData = Base64.decode(this.base64Data)
+            this.stringData = Base64.decode(onceData)
         },
     },
     watch: {}
